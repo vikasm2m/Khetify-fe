@@ -24,10 +24,12 @@ import AdminShops from '../pages/admin/Shops';
 import AdminUsers from '../pages/admin/Users';
 import AdminProducts from '../pages/admin/Products';
 
+import Landing from '../pages/Landing';
+
 export const AppRoutes = () => {
   return (
     <Routes>
-      <Route path="/" element={<Navigate to="/customer/home" replace />} />
+      <Route path="/" element={<Landing />} />
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
       
